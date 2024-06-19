@@ -37,7 +37,7 @@ jobs:
     name: Cocoapods Demo
     runs-on: macos-14
     env:
-      DEVELOPER_DIR: /Applications/Xcode_15.2.app
+      DEVELOPER_DIR: /Applications/Xcode_15.1.app
       WORKSPACE_NAME: SDWebImage.xcworkspace
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       iosDestination: platform=iOS Simulator,name=iPhone 15 Pro
@@ -89,7 +89,7 @@ jobs:
     name: Unit Test
     runs-on: macos-14
     env:
-      DEVELOPER_DIR: /Applications/Xcode_15.2.app
+      DEVELOPER_DIR: /Applications/Xcode_15.1.app
       WORKSPACE_NAME: SDWebImage.xcworkspace
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     # use matrix to generate jobs for each platform
